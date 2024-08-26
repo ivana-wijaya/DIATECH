@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diatech</title>
+    <link rel="stylesheet" href="../static/css/responsive_homepage.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>DIATECH</h1>
+        </div>
+    </header>
+
+    <main>
+        <h2>Let’s Check Your Glucose!</h2>
+        <section class="glucose-checker">
+            <form>
+                <div class="input-wrap">
+                    <label>Pregnant time (If no type '0'):</label>
+                    <div class="input-box"><input id="pregnantInput" type="number" placeholder="0"></div>
+                </div>
+                <br>
+
+                <div class="input-wrap">
+                    <label>Plasma Glucose Concentration:</label>
+                    <div class="input-box"><input id="plasmaInput" type="number" placeholder="0"></div>
+                </div>
+                <br>
+
+                <div class="input-wrap">
+                    <label>Diastolic Blood Pressure (mmHg):</label>
+                    <div class="input-box"><input id="diastolicInput" type="number" placeholder="0"></div>
+                </div>
+                <br>
+
+                <div class="input-wrap">
+                    <label>Triceps Skin Fold Thickness (mm):</label>
+                    <div class="input-box"><input id="tricepsInput" type="number" placeholder="0"></div>
+                </div>
+                <br>
+
+                <div class="input-wrap">
+                    <label>2-Hours Serum Insulin (mu U/ml):</label>
+                    <div class="input-box"><input id="serumInsulinInput" type="number" placeholder="0"></div>
+                </div>
+                <br>
+
+                <div class="input-wrap">
+                    <label>Body Mass Index :</label>
+                    <div class="input-box"><input id="bmiInput" type="number" placeholder="0"></div>
+                </div>
+                <br>
+
+                <div class="input-wrap">
+                    <label>Diabetes Pedigree :</label>
+                    <div class="input-box"><input id="pedigreeInput" type="number" placeholder="0"></div>
+                </div>
+                <br>
+
+                <div class="input-wrap">
+                    <label>Age:</label>
+                    <div class="input-box"><input id="ageInput" type="number" placeholder="0"></div>
+                </div>
+                <br>
+                <div id="CountButton"><button type="button" id="calculate-btn">Count</button></div>               
+            </form>
+           
+        </section>
+
+        <section class="right-section">
+            <section class="prediction-box">
+                <h3>Prediction</h3>
+                <div id="prediction-result"></div>
+            </section>
+            
+            <section class="about-us">
+                <h2>About Us</h2>
+                <img id="BackgroundLogo" src="../static/Asset/DIATECH_LOGO.jpg" alt="Diatech Logo">
+                <img onclick="window.location.href='aboutus.html'" id="SeeButton" src="../static/Asset/SeeButton.png" alt="">
+            </section>
+        </section>
+
+        <section class="recommended-articles">
+            <h2>Recommended Article for You</h2>
+            <div class="article-background">
+                <img src="../static/Asset/Background Image_group.png" alt="">
+            </div>
+            <div class="articles-container">
+                <article>
+                    <p id="article1Title">UI Students Create 'Centung' to Help Control Blood Sugar Levels in Diabetes Sufferers</p>
+                    <img id="article-cover-image1" src="../static/Asset/article-1.jpg" alt="Article 1">
+                    <a href="https://www.ui.ac.id/en/ui-students-create-centung-to-help-control-blood-sugar-levels-in-diabetes-sufferers/" target="_blank">
+                        <img id="seeArticleButton1" src="../static/Asset/SeeArticleButton.png" alt="">
+                    </a>
+                </article>
+                <article>
+                    <p id="article2Title">Scientists hail 'smart' insulin that responds to changing blood sugar levels in real time</p>
+                    <img src="../static/Asset/article-2.jpg" alt="Article 2">
+                    <a href="https://www.theguardian.com/society/article/2024/aug/11/scientists-hail-smart-insulin-responds-changing-blood-sugar-levels-real-time-diabetes" target="_blank">
+                        <img id="seeArticleButton2" src="../static/Asset/SeeArticleButton.png" alt="">
+                    </a>
+                </article>
+                <article>
+                    <p id="article3Title">15 Ways To Naturally Lower Your Blood Sugar</p>
+                    <img src="../static/Asset/article-3.jpg" alt="Article 3">
+                    <a href="https://www.health.com/naturally-lower-blood-sugar-8682382" target="_blank">
+                        <img id="seeArticleButton3" src="../static/Asset/SeeArticleButton.png" alt="">
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">Contact Us</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="#">Testimonial</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="../static/Asset/instagram_icon.png" alt="Instagram"></a>
+                <a href="#"><img src="../static/Asset/twitter_icon.png" alt="Twitter"></a>  
+                <a href="#"><img src="../static/Asset/fb_icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../static/js/homepage.js"></script>
+</body>
+</html>

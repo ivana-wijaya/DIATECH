@@ -1,0 +1,441 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    background-image: url("/Asset/Background_about_us.png");
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+header {
+    width: 96.8%;
+    background-color: #B5E7FF;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header-container{
+    box-shadow: 0px 10px 20.2px 3 rgba(47, 47, 47, 0.568);
+    /*
+    box-shadow property: a b c d e
+    a = offset x
+    b = offset y
+    c = blur-radius
+    d = spread-radius
+    e = color
+    */
+}
+
+header h1 {
+    margin: 0;
+    color: #0F52BA;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: right;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #89CFF0;
+    border-radius: 15px;
+}
+
+.about-us{
+    display: inline-block;
+    height: 212px;
+    padding: 20px;
+    
+}
+
+.mission, .vision, .what-we-do, .why-choose, .contact-us{
+    display: inline-block;
+}
+
+.mission, .vision, .what-we-do, .contact-us, .about-us{
+    line-height: 35px;
+}
+
+.mission{
+    width: 500px;
+    height: 430px;
+    padding: 20px;
+    margin-right: 15px;
+}
+
+.what-we-do{
+    width: 630px;
+    height: 250px;
+    vertical-align: top;
+    padding: 15px;
+}
+
+.vision{
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.why-choose{
+    position: relative;
+    width: 620px;
+    height: 590px;
+    padding: 20px;
+    bottom: 190px;
+
+}
+
+.contact-us{
+    position: relative;
+    width: 96%;
+    padding: 20px;
+    vertical-align: bottom;
+    bottom: 100px;
+
+}
+
+h2 {
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+}
+
+p, ul {
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 50px;
+}
+
+.contact-us a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 32px;
+        text-align: right;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 10px;
+        height: auto;
+    }
+
+    .about-us {
+        width: 95%;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .mission, .vision, .what-we-do, .why-choose, .contact-us, .about-us {
+        display: inline-block;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .mission, .vision {
+        margin-right: 0;
+    }
+
+    .why-choose {
+        bottom: 0;
+    }
+
+    .contact-us {
+        bottom: 0;
+    }
+
+    .mission{
+        width: 300px;
+        height: 500px;
+        padding: 20px;
+        margin-right: 15px;
+    }
+    
+    .what-we-do{
+        width: 330px;
+        height: 330px;
+        vertical-align: top;
+        padding: 15px;
+    }
+    
+    .vision{
+        width: 300px;
+        height: 450px;
+        padding: 20px;
+        vertical-align: top;
+        margin-right: 15px;
+    }
+    
+    .why-choose{
+        position: relative;
+        width: 320px;
+        height: 630px;
+        padding: 20px;
+        bottom: 180px;
+        line-height: 40px;
+    }
+    
+    .contact-us{
+        position: relative;
+        width: 93%;
+        padding: 20px;
+        margin-bottom: 0;
+        vertical-align: bottom;
+        bottom: 180px;
+    
+    }   
+
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    ul {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .contact-us a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        width: auto;
+        padding: 8px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+        text-align: right;
+    }
+
+    .container {
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    .about-us {
+        width: 95%;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .mission, .vision, .what-we-do, .why-choose, .contact-us, .about-us {
+        display: inline-block;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .mission, .vision, .what-we-do, .why-choose,.contact-us, .about-us{
+        line-height: 20px;
+    }
+
+    .mission{
+        width: 170px;
+        height: 300px;
+        padding: 20px;
+        margin-right: 15px;
+    }
+
+    .what-we-do{
+        width: 170px;
+        height: 230px;
+        vertical-align: top;
+        padding: 15px;
+    }
+    
+    .vision{
+        width: 170px;
+        height: 300px;
+        padding: 20px;
+        vertical-align: top;
+        margin-right: 15px;
+    }
+    
+    .why-choose{
+        position: relative;
+        width: 170px;
+        height: 380px;
+        padding: 20px;
+        bottom: 80px;
+    }
+    
+    .contact-us{
+        position: relative;
+        width: 90%;
+        padding: 20px;
+        vertical-align: bottom;
+        bottom: 85px;
+    
+    }   
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    ul {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .contact-us a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+        text-align: right;
+    }
+
+    .container {
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    .about-us {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .mission, .vision, .what-we-do, .why-choose, .contact-us, .about-us {
+        display: inline-block;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .mission, .vision, .what-we-do, .why-choose,.contact-us, .about-us{
+        line-height: 12px;
+    }
+
+    .mission{
+        width: 90px;
+        height: 220px;
+        padding: 20px;
+        margin-right: 15px;
+    }
+
+    .what-we-do{
+        width: 100px;
+        height: 150px;
+        vertical-align: top;
+        padding: 15px;
+    }
+    
+    .vision{
+        width: 90px;
+        height: 270px;
+        padding: 20px;
+        vertical-align: top;
+        margin-right: 15px;
+    }
+    
+    .why-choose{
+        position: relative;
+        width: 90px;
+        height: 350px;
+        padding: 20px;
+        bottom: 80px;
+        vertical-align: top;
+    }
+    
+    .contact-us{
+        position: relative;
+        width: 90%;
+        padding: 15px;
+        vertical-align: bottom;
+        margin-top: 0;
+        bottom: 90px;
+    
+    }   
+
+    h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 8px;
+        text-align: left;
+    }
+
+    ul {
+        font-size: 8px;
+        padding-left: 15px;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .contact-us a {
+        font-size: 8px;
+    }
+}

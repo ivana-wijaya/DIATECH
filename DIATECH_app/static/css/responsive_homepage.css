@@ -1,0 +1,737 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #89CFF0;
+}
+
+header {
+    background-color: #B5E7FF;
+    padding: 20px;
+}
+
+.header-container{
+    box-shadow: 0px 7px 20.2px 3 rgba(47, 47, 47, 0.568);
+    /*
+    box-shadow property: a b c d e
+    a = offset x
+    b = offset y
+    c = blur-radius
+    d = spread-radius
+    e = color
+    */
+}
+
+header h1 {
+    margin: 0;
+    color: #0F52BA;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: right;
+}
+
+main{
+    overflow: hidden;
+    height: 1024px;
+}
+
+main h2{
+    color: #FDF9F9;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.prediction-box, .about-us{
+    display: block;
+}
+
+.right-section{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.glucose-checker {
+    display:inline-block;
+    background-color: #F5F5F5;
+    width: 765px;
+    height: 350px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 8px 17.8px 0 rgba(125, 125, 125, 0.25);
+}
+
+.glucose-checker form{
+   overflow: hidden;
+}
+
+.input-1-wrap{
+    display: inline;
+}
+
+.glucose-checker form label {
+    display: inline;
+    /* margin-bottom: 20px; */
+    color: #000000;
+}
+
+.glucose-checker form input {
+    width: 88px;
+    height: 14px;
+    text-align: center;
+    float: right;
+    clear: both;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+    border: 1px solid #f5f5f5;
+}
+
+.input-box{
+    display: inline;
+    text-align: right;
+}
+
+#CountButton{
+    text-align: right;
+}
+
+button {
+    background-color: rgba(36, 110, 237, 0.55);
+    width: 136px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a75ff;
+}
+
+.prediction-box {
+    width: 300px;
+    height: 160px;
+    background-color: #F5F5F5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 8px 17.8px rgba(125, 125, 125, 0.2);
+    vertical-align: top;
+}
+
+#predictionResult{
+    background-color: #F1F0F0;
+    width: 298px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 3px 4px 16px rgba(125, 125, 125, 0.2) inset;
+}
+
+.about-us #BackgroundLogo{
+    width: 340px;
+    height: 155px;
+    background-color: rgba(0, 0, 0, 0.674);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 8px 17.8px rgba(125, 125, 125, 0.2);
+    object-fit: cover;
+    opacity: 0.75;
+}
+
+.about-us h2{
+    position: absolute;
+    width: 151px;
+    height: 124px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: left;
+    z-index: 1;
+    text-shadow: 5px 5px 8.5px rgba(22, 22, 22, 0.65);
+}
+
+.about-us #SeeButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* Adjust the position of button */
+    bottom: 45px;
+    right: 70px;
+}
+
+.article-background img{
+    background-color: #ECECEC;
+    width: 1243px;
+    height: 588px;
+    padding: 10px;
+    margin-top: auto;
+    position: relative;
+}
+
+.recommended-articles h2{
+    color: rgba(21, 66, 136, 0.8);
+    margin-bottom: 20px;
+}
+
+.articles-container {
+    position: relative;
+    display: flex;
+    bottom: 600px;
+    justify-content: space-around;
+    padding: 10px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgba(198, 198, 198, 0.505);
+    /* filter: blur(12.5px); */
+}
+
+.articles-container article{
+    display: inline-block;
+    margin-right: 0px;
+    z-index: 1;
+}
+
+.articles-container img{
+    width: 300px;
+    height: 295px;
+    margin: 40px;
+    /* padding: 15px; */
+    border-radius: 30px;
+    object-fit: cover;
+    opacity: 0.75;
+    background-color: rgba(0, 0, 0, 0.24);
+   
+}
+
+/* Align Article Title (all) */
+.articles-container p{
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 90px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+
+}
+
+/* Align Article Title (one by one) */
+article #article1Title{
+    top: 100px;
+    left: 8%;
+}
+
+article #article2Title{
+    top: 100px;
+    left: 40%;
+}
+
+article #article3Title{
+    top: 100px;
+    left: 75%;
+}
+
+article #seeArticleButton1{
+    position: absolute;
+    bottom: 25px;
+    left: 250px;
+    width: 47px;
+    height: 47px;
+}
+
+article #seeArticleButton2{
+    position: absolute;
+    bottom: 25px;
+    left: 630px;
+    width: 47px;
+    height: 47px;
+}
+
+article #seeArticleButton3{
+    position: absolute;
+    bottom: 25px;
+    left: 1010px;
+    width: 47px;
+    height: 47px;
+}
+
+footer {
+    background-color: #3a9ed9;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a, .social-media a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .glucose-checker {
+        display: inline-block;
+        width: 50%;
+        height: 38%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .prediction-box{
+        width: 250px;
+        vertical-align: top;
+    }
+
+    #predictionResult{
+        width: 245px;
+    }
+
+    .right-section{
+        position: relative;
+    }
+
+    .about-us #BackgroundLogo{
+        width: 295px;
+    }
+
+    .about-us #SeeButton{
+        bottom: 45px;
+        right: 20px;
+    }
+
+    main h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .article-background{
+        width: 90%;
+        height: 50%;
+    }
+    
+    .recommended-articles{
+        width: 90%;
+    }
+
+    .recommended-articles h2{
+        text-align: left;
+    }
+    
+    .articles-container {
+       width: 100%;
+       margin-left: 20px;
+       margin-top: 50px;
+    }
+    
+    .articles-container p{
+        width: 100px;
+        font-size: 10px;
+    }
+    
+    article #article1Title{
+        top: 60px;
+        left: 8%;
+    }
+    
+    article #article2Title{
+        top: 60px;
+        left: 42%;
+    }
+    
+    article #article3Title{
+        top: 60px;
+        left: 75%;
+    }
+
+    .articles-container img{
+        max-width: 100%;
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+
+    article #seeArticleButton1{
+        bottom: 20px;
+        left: 110px;
+        width: 37px;
+        height: 37px;
+    }
+    
+    article #seeArticleButton2{
+        bottom: 25px;
+        left: 340px;
+        width: 37px;
+        height: 37px;
+    }
+    
+    article #seeArticleButton3{
+        bottom: 25px;
+        left: 570px;
+        width: 37px;
+        height: 37px;
+    }
+
+    footer p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+        text-align: right;
+    }
+
+    main h2 {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .glucose-checker {
+        display: inline-block;
+        width: 85%;
+        height: 38%;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .glucose-checker label{
+        font-size: 10px;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    /* Modify this, biar muncul artikelnya */
+    .prediction-box, .about-us{
+        display: inline-block;
+    }
+    
+    .right-section{
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        left: 15px;
+    }
+    
+    .prediction-box {
+        width: 180px;
+        height: 160px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    #predictionResult{
+        width: 185px;
+        height: 100px;
+    }
+
+    .about-us #BackgroundLogo{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        vertical-align: top;
+    }
+    /* ---- */
+    
+    .about-us h2{
+        font-size: 36px;
+    }
+    
+    .about-us #SeeButton{
+        /* Adjust the position of button */
+        bottom: 30px;
+        right: 5px;
+    }
+    
+    .article-background{
+        width: 90%;
+        height: 30%;
+    }
+    
+    .recommended-articles{
+        width: 90%;
+    }
+
+    .recommended-articles h2{
+        text-align: left;
+    }
+    
+    .articles-container {
+       width: 100%;
+       margin-left: 20px;
+       margin-top: 0px;
+    }
+    
+    .articles-container p{
+        width: 90px;
+        font-size: 10px;
+    }
+    
+    .articles-container img{
+        max-width: 100%;
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    article #seeArticleButton1{
+        position: absolute;
+        bottom: 20px;
+        left: 95px;
+        width: 27px;
+        height: 27px;
+    }
+    
+    article #seeArticleButton2{
+        position: absolute;
+        bottom: 25px;
+        left: 240px;
+        width: 27px;
+        height: 27px;
+    }
+    
+    article #seeArticleButton3{
+        position: absolute;
+        bottom: 25px;
+        left: 385px;
+        width: 27px;
+        height: 27px;
+    }
+
+    footer p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    header h1 {
+        font-size: 20px;
+        text-align: right;
+    }
+
+    main h2 {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .glucose-checker {
+        display: inline-block;
+        width: 85%;
+        height: 35%;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .glucose-checker label{
+        font-size: 10px;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        margin-top: 25px;
+        padding: 10px;
+    }
+
+    /* Modify this, biar muncul artikelnya */
+    .prediction-box, .about-us{
+        display: inline-block;
+    }
+    
+    .right-section{
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        left: 15px;
+    }
+    
+    .prediction-box {
+        width: 120px;
+        height: 120px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        padding-bottom: 20px;
+    }
+
+    #predictionResult{
+        width: 120px;
+        height: 70px;
+    }
+
+    .about-us #BackgroundLogo{
+        width: 130px;
+        height: 155px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        vertical-align: top;
+    }
+    /* ---- */
+
+    .about-us h2{
+        position: absolute;
+        width: 100px;
+        height: 90px;
+        font-size: 24px;
+        text-align: left;
+    }
+    
+    .about-us #SeeButton{
+        width: 35px;
+        height: 35px;
+        /* Adjust the position of button */
+        bottom: 30px;
+        right: 8px;
+    }
+    
+    .recommended-articles{
+        width: 320px;
+        height: auto;
+    }
+
+    .recommended-articles h2{
+        text-align: left;
+    }
+
+    .article-background{
+        width: auto;
+        height: auto;
+    }
+
+    .article-background img{
+        padding: 0;
+        height: auto;
+    }
+
+    .articles-container {
+        bottom: 600px;
+        padding: 5px;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        width: 90%;
+        border-radius: 20px;
+    }
+    
+    
+    .articles-container p{
+        width: 70px;
+        height: 60px;
+        font-size: 7px;
+    }
+
+    article #article1Title{
+        top: 20px;
+        left: 8%;
+    }
+    
+    article #article2Title{
+        top: 20px;
+        left: 40%;
+    }
+
+    article #article3Title{
+        top: 20px;
+        left: 70%;
+    }
+    
+    .articles-container img{
+        max-width: 100%;
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    article #seeArticleButton1{
+        position: absolute;
+        bottom: 15px;
+        left: 60px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    article #seeArticleButton2{
+        position: absolute;
+        bottom: 15px;
+        left: 155px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    article #seeArticleButton3{
+        position: absolute;
+        bottom: 15px;
+        left: 250px;
+        width: 20px;
+        height: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+    
+    footer a {
+        font-size: 8px;
+        text-align: center;
+    }
+    
+    .footer-links a, .social-media a {
+        margin-right: 10px;
+    }
+    
+    .social-media img {
+        width: 20px;
+        height: 20px;
+    }
+
+    
+}
